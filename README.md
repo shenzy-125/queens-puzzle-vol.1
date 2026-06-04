@@ -1,4 +1,4 @@
-# ♛ Queens Puzzle Game
+# ♛ Queens Puzzle Game (Vol. 1)
 
 A browser-based implementation of the Queens puzzle inspired by LinkedIn Queens.
 
