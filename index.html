@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queens</title>
+    <link rel="icon" type="image/avif" href="Queen.avif">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Queens</h1>
+    <div id="instructions">
+        Place 6 queens on the board such that no two queens threaten each other. 
+        You can place a queen by left-clicking on an empty cell and remove it by left-clicking on a cell with a queen.
+    </div>
+    <div id="sub-instructions">
+        Additionally, each region must contain exactly one queen. 
+    </div>
+    <div id="topPanel">
+       <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+    
+    <div id="gameLayout">
+
+    <div id="statsBox">
+        <div id="queenCounter">Queens placed: 0/6</div>
+        <div id="timer">Time: 00:00</div>
+        <div id="bestTime">Best Time: --:--</div>
+        <div id="moves">Moves: 0</div>
+        <div id="mistakes">Mistakes: 0</div>
+        <div id="hints">Hints used: 0</div>
+        <div id="played">Played: 0</div>
+        <div id="won">Won: 0</div>
+    </div>
+
+    <div id="mainGame">
+
+        <div id="controls">
+            <div id="puzzleName"></div>
+            <button id="hint">💡 Hint</button>
+            <button id="undo">Undo ↩</button>
+            <button id="redo">Redo ↪</button>
+        </div>
+
+        <div id="message"></div>
+
+        <div id="board"></div>
+
+        <div id="bottomButtons">
+            <button id="reset">Reset</button>
+            <button id="newPuzzle">New Puzzle</button>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
