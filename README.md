@@ -1,6 +1,10 @@
 # ♛ Queens Puzzle Game (Vol. 1)
 
-A browser-based implementation of the Queens puzzle inspired by LinkedIn Queens.
+A browser-based implementation of the Queens puzzle inspired by LinkedIn Queens. Best experienced on desktops.
+
+![Queens Puzzle Screenshot](SS.png)
+
+▶ Play it live → 
 
 ## Features
 
@@ -9,8 +13,9 @@ A browser-based implementation of the Queens puzzle inspired by LinkedIn Queens.
 - Timer and best time tracking
 - Move and mistake counters
 - Keyboard shortcuts
-- Multiple puzzles
+- Two handcrafted puzzles
 - Responsive UI
+- Statistics Tracking
 
 ## Tech Stack
 
@@ -22,7 +27,6 @@ A browser-based implementation of the Queens puzzle inspired by LinkedIn Queens.
 
 - Infinite puzzle generation using backtracking
 - Smart hint system
-- Statistics tracking
 - Sound effects
 
 ## Controls
