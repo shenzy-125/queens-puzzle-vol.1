@@ -2,6 +2,10 @@
 
 A browser-based implementation of the Queens puzzle inspired by LinkedIn Queens. Best experienced on desktops.
 
+![Queens Puzzle Screenshot](SS.png)
+
+▶ Play it live → 
+
 ## Features
 
 - Dark mode
