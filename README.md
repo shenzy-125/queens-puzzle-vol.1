@@ -4,7 +4,7 @@ A browser-based implementation of the Queens puzzle inspired by LinkedIn Queens.
 
 ![Queens Puzzle Screenshot](SS.png)
 
-▶ Play it live → 
+▶ Play it live → https://shenzy-125.github.io/queens-puzzle-vol.1/
 
 ## Features
 
