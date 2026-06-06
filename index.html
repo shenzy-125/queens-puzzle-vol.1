@@ -629,6 +629,10 @@ document.getElementById('reset').addEventListener('click',()=>{
     currentPuzzle++;
     document.getElementById('puzzleName').textContent = `Puzzle #${currentPuzzle}`;
 
+    gamesPlayed++;
+    localStorage.setItem('gamesPlayed',gamesPlayed);
+    updateStats();
+
     createBoard();
     renderBoard();
     updateQueenCounter();
