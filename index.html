@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queens</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♛</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
 body{
     font-family: 'Poppins', cursive;
@@ -584,9 +587,12 @@ function checkWin(){
     if(queens===size){
         gameWon=true;
         puzzleSolved=true;
+        gamesWon++;
+        localStorage.setItem('gamesWon',gamesWon);
         confetti();
         messageDiv.textContent="Congratulations ! You solved it ! 🎉🎉🎉";
         clearInterval(timerInterval);
+        updateStats();
 
         if(seconds<bestTime){
             bestTime=seconds;
@@ -689,9 +695,17 @@ document.getElementById('redo').addEventListener('click',()=>{
     checkWin();
 });
 
+gamesPlayed++;
+localStorage.setItem('gamesPlayed',gamesPlayed);
+updateStats();
+
 createBoard();
 renderBoard();
 startTimer();
+
+document.getElementById('newPuzzle').addEventListener('click',()=>{
+    document.getElementById('message').textContent="New Puzzle feature coming soon !";
+});
 
 themeButton.addEventListener('click',()=>{
     document.body.classList.toggle('dark');
